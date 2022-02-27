@@ -37,7 +37,6 @@ include_once('../includes/header.php')
               <div class="form-group">
                 <label for="image">Upload Video</label>
                 <input type="file" class="form-control" name="video" value="">
-                <!-- <input id="uploadbutton" type="submit" name="upload" value="Upload"> -->
               </div>
               <div class="form-group">
                 <button id="uploadbutton" type="submit" name="upload" value="upload" class="btn btn-primary waves">Upload</button>
@@ -48,23 +47,6 @@ include_once('../includes/header.php')
       </div>
     </div>
   </div>
-
-  <!-- <script src="js/bootstrap.min.js" charset="utf-8"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" charset="utf-8"></script> -->
-
-
-
-  <!-- <label for="">Video Title</label><br>
-  <input id="title" type="text" name="title" value="" placeholder="Enter Video Title" required><br><br>
-
-  <label for="">Video Description</label><br>
-  <textarea id="description" name="description" rows="8" cols="80" placeholder="Enter Video Description" required></textarea><br><br>
-  <label for="">Upload Thumbnail</label>
-  <input type="file" name="thumbnail" value="" required><br><br>
-  <label for="">Upload Video</label>
-  <input type="file" name="video" value="" required><br><br>
-  <input id="uploadbutton" type="submit" name="upload" value="Upload"> -->
-
 
   <?php
   include('../config/dbcon.php');
@@ -86,10 +68,11 @@ include_once('../includes/header.php')
 
     $sql = "INSERT INTO video(title,description,thumbnail,video)
       values('$title','$description','$thumbnail','$video')";
-
     $query = mysqli_query($conn, $sql);
   }
 
   ?>
 
 </body>
+
+</html>
