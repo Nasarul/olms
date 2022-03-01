@@ -32,6 +32,7 @@
       }
     </style>
   </head>
+  
   <body>
     <h1>Video Sharing Site</h1>
     <div class="">
