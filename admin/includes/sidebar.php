@@ -33,7 +33,7 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="./index.html" class="nav-link active">
+                  <a href="../index.php" class="nav-link active">
                     <i class="far fa-circle nav-icon"></i>
                     <p>
                       Admin
@@ -69,7 +69,7 @@
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="../teacher/index.php" class="nav-link">
                     <i class="fas fa-chalkboard-teacher"> </i>
                     <p>
                       Teachers
@@ -104,7 +104,7 @@
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="../student/index.php" class="nav-link">
                     <i class="nav-icon fas fa-tree"></i>
                     <p>
                       Student
@@ -188,7 +188,7 @@
                         <p>View Course</p>
                       </a>
                     </li>
-                    
+
                     <li class="nav-item">
                       <a href="#" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
@@ -210,24 +210,45 @@
                   </ul>
                 </li>
 
-                <li class="nav-header">EXTRA</li>
+                <!-- <li class="nav-header">EXTRA</li> -->
+
                 <li class="nav-item">
-                  <a href="pages/calendar.html" class="nav-link">
+                  <a href="./admin/index.php" class="nav-link">
                     <i class="nav-icon far fa-calendar-alt"></i>
                     <p>
-                      Calendar
-                      <span class="badge badge-info right">2</span>
+                      Admin
+                      <span class="badge badge-info right">></span>
                     </p>
                   </a>
                 </li>
+
+
                 <li class="nav-item">
-                  <a href="pages/gallery.html" class="nav-link">
-                    <i class="nav-icon far fa-image"></i>
+                  <a href="./teacher/index.php" class="nav-link">
+                    <i class="fas fa-chalkboard-teacher "> </i>
                     <p>
-                      Gallery
+                      Teacher
+                      <span class="badge badge-info right">></span>
                     </p>
                   </a>
                 </li>
+
+                <li class="nav-item">
+                  <a href="./student/index.php" class="nav-link">
+                  <i class="bi bi-person-square"></i>
+                    <!-- <i class="nav-icon far fa-calendar-alt"></i> -->
+                    <!-- <i class="fa-solid fa-screen-users"></i> -->
+                    <p>
+                      Student
+                      <span class="badge badge-info right">></span>
+                    </p>
+                  </a>
+                </li>
+
+
+
+
+
               </ul>
         </nav>
         <!-- /.sidebar-menu -->

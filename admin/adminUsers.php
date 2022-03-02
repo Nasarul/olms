@@ -20,23 +20,23 @@ include('includes/topbar.php');
                     <div class="modal-body">
                         <div class="rowform-group">
                             <label for="">Name</label>
-                            <input type="text" name="adm_name" class="form-control" placeholder="Name">
+                            <input type="text" name="name" class="form-control" placeholder="Name">
                         </div>
                         <div class="rowform-group">
                             <label for="">E-mail</label>
-                            <input type="email" name="adm_email" class="form-control" placeholder="email">
+                            <input type="email" name="email" class="form-control" placeholder="email">
                         </div>
                         <div class="rowform-group">
                             <label for="">Mobile</label>
-                            <input type="text" name="adm_mobile" class="form-control" placeholder="mobile">
+                            <input type="text" name="mobile" class="form-control" placeholder="mobile">
                         </div>
                         <div class="rowform-group">
                             <label for="">User Name</label>
-                            <input type="text" name="adm_username" class="form-control" placeholder="username">
+                            <input type="text" name="username" class="form-control" placeholder="username">
                         </div>
                         <div class="rowform-group">
                             <label for="">Passwrod</label>
-                            <input type="password" name="adm_password" class="form-control" placeholder="password">
+                            <input type="password" name="password" class="form-control" placeholder="password">
                         </div>
                     </div>
                     <div class="modal-footer">
