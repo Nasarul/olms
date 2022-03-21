@@ -34,7 +34,7 @@ if (isset($_POST['Submit'])) {
 	}
 	if (!isset($errorMsg)) {
 		$sql = "INSERT INTO tblvideo (title, discription, thumbnail)
-					values('" . $title . "','" . $discription . "', '" . $thumbnail . "')";
+					values('" . $title . "','" . $discription . "','" . $thumbnail . "')";
 		$result = mysqli_query($conn, $sql);
 		if ($result) {
 			$successMsg = 'New record added successfully';

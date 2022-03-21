@@ -33,7 +33,7 @@ if (isset($_POST['Submit'])) {
 
     if (in_array($thumbnailExt, $allowExt)) {
 
-      if ($thumbnailSize < 5000000) {
+      if ($thumbnailSize < 500000) {
         unlink($upload_dir . $row['thumbnail']);
         move_uploaded_file($thumbnailTmp, $upload_dir . $usePic);
       } else {

@@ -83,7 +83,7 @@
       $thumbnail_size=$_FILES['thumbnail']['size'];
       $thumbnail_temp_loc=$_FILES['thumbnail']['tmp_name'];
       $thumbnail_store="thumbnail/".$thumbnail;
-      move_uploaded_file($thumbnail_temp_loc,$thumbnail_store);
+      move_uploaded_file($thumbnail_temp_loc, $thumbnail_store);
 
       $video=$_FILES['video']['name'];
       $video_type=$_FILES['video']['type'];

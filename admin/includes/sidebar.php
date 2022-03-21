@@ -222,7 +222,6 @@
                   </a>
                 </li>
 
-
                 <li class="nav-item">
                   <a href="./teacher/index.php" class="nav-link">
                     <i class="fas fa-chalkboard-teacher "> </i>

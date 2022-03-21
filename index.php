@@ -5,110 +5,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
- 
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/210c136c9c.js" crossorigin="anonymous"></script>
+    <title>NAPD OLMS</title>
 
-    <style type="text/css">
-        .body {
-            font-family: "Dosis", sans-serif;
-        }
-
-        .container {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            flex-wrap: wrap;
-            height: 97vh;
-        }
-
-        .container .box {
-            width: 250px;
-            height: 250px;
-            border-radius: 10px;
-            background-color: white;
-            margin: 20px;
-            transition: 3s all ease-in-out;
-            position: absolure;
-            box-shadow: 0px 0px 40px background;
-        }
-
-        .container .box .boxContent {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 15px;
-        }
-
-        .container .box .boxContent .icon {
-            color: #8293ff;
-            font-size: 48px;
-            padding: 15px;
-        }
-
-        .container .box .boxContent .title {
-            font-size: 24px;
-            color: #8293ff;
+    <style>
+        body {
+            background: #f1f1f1;
+            font-family: 'Inconsolata', monospace;
             font-weight: bold;
-            padding: 10px;
+            color: gray;
+            text-align: center;
+            -webkit-font-smoothing: antialiased;
+            margin: 20px;
         }
 
-        .container .box .boxContent .desc {
-            color: #8293ff;
-            font-size: 15px;
-            height: 20%;
+        .box-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 5%;
+            border-radius: 15px;
         }
 
-        .container .box .boxContent .hover {
-            background: linear-gradient(130deg, #503bff 0%, #346614 100%);
+        .box {
+            padding: 30px;
+            margin: 2%;
+            background: white;
+            width: 30%;
+            border: 1px solid #d6d6d6;
+            box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.25);
+            border-radius: 15px;
+            transition: .2s all;
+        }
+
+        .box-wrap:hover .box {
+            filter: blur(3px);
+            opacity: .5;
+            transform: scale(.98);
             box-shadow: none;
         }
 
-        .container .box:hover .icon,
-        .container .box:hover .title,
-        .container .box:hover .desc {
-            color: wheat;
-            transition: 3s all ease-in-out;
+        .box-wrap:hover .box:hover {
+            transform: scale(1);
+            filter: blur(0px);
+            opacity: 1;
+            background-color: green;
+            box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
+        }
+
+        .box-wrap {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            color: #f1f1f1;
+        }
+
+        .fa-solid {
+            font-size: 60px;
+            color: #f1f1f1;
+        }
+
+        h2 {
+            margin-top: 0;
+            font-family: Tahoma;
+            font-size: 30px;
+            color: green;
+        }
+
+        h5 {
+            margin-top: 2px;
+            font-family: Tahoma;
+            font-size: 20px;
+            color: green;
         }
     </style>
-
 </head>
 
 <body>
+    <img src="admin/assets/dist/img/napdback.png" alt="">
+    <h2>NAPD Online Lecture Management System</h2>
+    <h5>(Select your options)</h5>
 
-    <div class="container">
+    <div class="box-wrap">
         <div class="box">
-            <div class="boxContent">
-                <i class="fa fa-microchip icon"></i>
-                <h1 class="title">Admin</h1>
-                <p class="desc">Click here for Admin login</p>
-            </div>
-            <a href="http://localhost/napd_olms/admin/index.php"></a>
+            <i class="fa-solid fa-user-gear"></i>
+            <p>Admin</p>
         </div>
+
         <div class="box">
-            <div class="boxContent">
-                <i class="fa fa-calendar icon"></i>
-                <h1 class="title">Teacher</h1>
-                <p class="desc">Click here for Teacher login </p>
-            </div>
-            <a href="#"></a>
+            <i class="fa-solid fa-user-tie"></i>
+            <p>Teacher</p>
         </div>
+
         <div class="box">
-            <div class="boxContent">
-                <i class="fa fa-podcast icon"></i>
-                <h1 class="title">Student</h1>
-                <p class="desc">Click here for Student login </p>
-            </div>
-            <a href="#"></a>
+            <i class="fa-solid fa-users"></i>
+            <p>Student</p>
         </div>
     </div>
 
-
-
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </html>

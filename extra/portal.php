@@ -1,3 +1,5 @@
+
+
 <style>
 	.portial-icon {
 	    font-size: 5rem;
@@ -37,7 +39,7 @@
 		<div class="col-lg-12">
 			<div class="row">
 				<div class="col-md-4">
-					<!-- <a href="<?php echo base_url.'admin' ?>" class="portal-link"> -->
+					<a href="<?php echo base_url.'admin' ?>" class="portal-link">
 						<div class="card card-widget widget-user">
 			              <!-- Add the bg color to the header using any of the bg-* classes -->
 			              <div class="widget-user-header bg-info">
@@ -55,7 +57,7 @@
 					</a>
 				</div>
 				<div class="col-md-4">
-					<!-- <a href="<?php echo base_url.'faculty' ?>" class="portal-link"> -->
+					<a href="<?php echo base_url.'faculty' ?>" class="portal-link">
 						<div class="card card-widget widget-user">
 			              <!-- Add the bg color to the header using any of the bg-* classes -->
 			              <div class="widget-user-header bg-info">
@@ -73,7 +75,7 @@
 					</a>
 				</div>
 				<div class="col-md-4">
-					<!-- <a href="<?php echo base_url.'student' ?>" class="portal-link"> -->
+					<a href="<?php echo base_url.'student' ?>" class="portal-link">
 						<div class="card card-widget widget-user">
 			              <!-- Add the bg color to the header using any of the bg-* classes -->
 			              <div class="widget-user-header bg-info border-info">
@@ -91,6 +93,7 @@
 					</a>
 				</div>
 			</div>
+		
 		<div>
 	</div>
 
