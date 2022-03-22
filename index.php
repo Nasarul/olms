@@ -88,6 +88,7 @@
     <div class="box-wrap">
         <div class="box">
             <i class="fa-solid fa-user-gear"></i>
+            <a href="admin/index.php"></a>
             <p>Admin</p>
         </div>
 
