@@ -14,9 +14,9 @@ include('../includes/header.php')
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto"></ul>
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="btn btn-primary" href="addTeacher.php"><i class="fa fa-user-plus"></i>Add Teacher's Info</a></li>
-          <li></li>
-          <li class="nav-item"><a class="btn btn-primary" href="../index.php"><i class="fa fa-user-plus"></i>Back to Dashboard</a></li>
+          <li class="nav-item"><a class="btn btn-primary" href="addTeacher.php"><i class="fa fa-user-plus"></i>Add Teacher's Info</a></li><br>
+
+          <li class="nav-item"><a class="btn btn-outline-danger" href="../index.php"><i class="fa fa-sign-out-alt"></i>Back to Dashboard</a></li>
         </ul>
       </div>
     </div>
@@ -35,12 +35,13 @@ include('../includes/header.php')
                   <th style="text-align:center">Name</th>
                   <th style="text-align:center">Designation</th>
                   <th style="text-align:center">Organization</th>
+                  <!-- not displayed email and mobile field -->
                   <!-- <th style="text-align:center">E-Mail</th>
                   <th style="text-align:center">Mobile</th> -->
                   <th style="text-align:center">Actions</th>
                 </tr>
               </thead>
-              
+
               <tbody>
                 <?php
                 $sql = "SELECT * FROM tblteacher";
@@ -50,10 +51,11 @@ include('../includes/header.php')
                 ?>
                     <tr>
                       <td><?php echo $row['tech_id'] ?></td>
-                      <td style="text-align:center"><img src="<?php echo $upload_dir . $row['image']?>" height="80"></td>
+                      <td style="text-align:center"><img src="<?php echo $upload_dir . $row['image'] ?>" height="40"></td>
                       <td><?php echo $row['name'] ?></td>
                       <td><?php echo $row['designation'] ?></td>
                       <td><?php echo $row['organization'] ?></td>
+                      <!-- not displayed email and mobile field -->
                       <!-- <td><?php echo $row['email'] ?></td>
                       <td><?php echo $row['mobile'] ?></td> -->
                       <td class="text-center">
