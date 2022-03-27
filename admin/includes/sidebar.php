@@ -37,7 +37,9 @@
 
         <li class="nav-header">Master List</li>
         <li class="nav-item dropdown">
-          <a href="<?php echo base_url ?>admin/?page=faculty" class="nav-link nav-faculty">
+        <!-- <a href="teacher/index.php" class="nav-link nav-faculty"> -->
+
+          <a href="teacher/index.php" class="nav-link nav-faculty">
             <i class="nav-icon fas fa-user-tie"></i>
             <p>
               Teacher
@@ -45,7 +47,7 @@
           </a>
         </li>
         <li class="nav-item dropdown">
-          <a href="<?php echo base_url ?>admin/?page=students" class="nav-link nav-students">
+        <a href="student/index.php" class="nav-link nav-faculty">
             <i class="nav-icon fas fa-users"></i>
             <p>
               Students
@@ -64,15 +66,7 @@
         <li class="nav-header">Maintenance</li>
 
         <li class="nav-item dropdown">
-          <a href="<?php echo base_url ?>admin/?page=department" class="nav-link nav-department">
-            <i class="nav-icon fas fa-building"></i>
-            <p>
-              Department
-            </p>
-          </a>
-        </li>
-        <li class="nav-item dropdown">
-          <a href="<?php echo base_url ?>admin/?page=course" class="nav-link nav-course">
+          <a href="course/index.php" class="nav-link nav-course">
             <i class="nav-icon fas fa-list"></i>
             <p>
               Course
@@ -80,7 +74,7 @@
           </a>
         </li>
         <li class="nav-item dropdown">
-          <a href="<?php echo base_url ?>admin/?page=subject" class="nav-link nav-subject">
+          <a href="subject/index.php" class="nav-link nav-subject">
             <i class="nav-icon fas fa-tasks"></i>
             <p>
               Subjects

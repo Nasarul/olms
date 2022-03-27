@@ -2,9 +2,9 @@
 require_once('../config/dbcon.php');
 $upload_dir = '../uploads/student/';
 
-if (isset($_GET['id'])) {
-  $id = $_GET['id'];
-  $sql = "SELECT * FROM tblstudent WHERE id=" . $id;
+if (isset($_GET['stu_id'])) {
+  $stu_id = $_GET['stu_id'];
+  $sql = "SELECT * FROM tblstudent WHERE stu_id=" . $stu_id;
   $result = mysqli_query($conn, $sql);
   if (mysqli_num_rows($result) > 0) {
     $row = mysqli_fetch_assoc($result);
@@ -35,10 +35,10 @@ include_once('../includes/header.php')
               <img src="<?php echo $upload_dir . $row['image'] ?>" height="200">
             </div>
             <div class="col-md">
-              <h5 class="form-control"><i class="fa-solid fa-user"></i>
+              <!-- <h5 class="form-control"><i class="fa-solid fa-user"></i>
                 <span><?php echo $row['roll'] ?></span>
                 </i>
-              </h5>
+              </h5> -->
               <h5 class="form-control"><i class="fa-solid fa-user"></i>
                 <span><?php echo $row['name'] ?></span>
                 </i>
@@ -54,7 +54,7 @@ include_once('../includes/header.php')
               <h5 class="form-control"><i class="fa-solid fa-envelope-open-text"></i>
                 <span><?php echo $row['email'] ?></span>
                 </i>
-              </h5>
+              </h5> 
               <h5 class="form-control"><i class="fa-solid fa-mobile-screen-button"></i>
                 <span><?php echo $row['mobile'] ?></span>
                 </i>
@@ -79,6 +79,7 @@ include_once('../includes/header.php')
   <script src="js/bootstrap.min.js" charset="utf-8"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" charset="utf-8"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  
   <script type="text/javascript">
     $(document).ready(function() {
       $('#example').DataTable();

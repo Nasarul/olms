@@ -1,4 +1,21 @@
- <footer class="main-footer">
+ <style>
+
+
+
+#footer {
+    padding: 5px;
+background-color: #C0C0C0; */
+position: relative;
+height: 40px;
+/* margin-top: -80px; */ */
+/* clear:both; */
+/* color: #C0C0C0; */
+} */
+
+ </style>
+
+
+ <footer id="footer" class="main-footer">
      <strong>Copyright &copy; 2022 <a href="http://www.napd.gov.bd/">NAPD</a>.</strong>
      All rights reserved.
      <div class="float-right d-none d-sm-inline-block">

@@ -43,14 +43,14 @@ include_once('../includes/header.php')
                   while ($row = mysqli_fetch_assoc($result)) {
                 ?>
                     <tr>
-                      <td><?php echo $row['id'] ?></td>
+                      <td><?php echo $row['sub_id'] ?></td>
                       <td><?php echo $row['code'] ?></td>
                       <td><?php echo $row['name'] ?></td>
 
                       <td class="text-center">
-                        <a href="viewSubject.php?id=<?php echo $row['id'] ?>" class="btn btn-success" title="View Subject"><i class="fa fa-eye"></i></a>
-                        <a href="editSubject.php?id=<?php echo $row['id'] ?>" class="btn btn-info" title="Edit Subject"><i class="fa fa-user-edit"></i></a>
-                        <a href="index.php?delete=<?php echo $row['id'] ?>" class="btn btn-danger" title="Delete Subject" onclick="return confirm('Are you sure to delete this record?')"><i class="fa fa-trash-alt"></i></a>
+                        <a href="viewSubject.php?sub_id=<?php echo $row['sub_id'] ?>" class="btn btn-success" title="View Subject"><i class="fa fa-eye"></i></a>
+                        <a href="editSubject.php?sub_id=<?php echo $row['sub_id'] ?>" class="btn btn-info" title="Edit Subject"><i class="fa fa-user-edit"></i></a>
+                        <a href="index.php?delete=<?php echo $row['sub_id'] ?>" class="btn btn-danger" title="Delete Subject" onclick="return confirm('Are you sure to delete this record?')"><i class="fa fa-trash-alt"></i></a>
                       </td>
                     </tr>
                 <?php

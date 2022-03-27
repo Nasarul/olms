@@ -2,9 +2,9 @@
 require_once('../config/dbcon.php');
 // $upload_dir = '../uploads/teacher/';
 
-if (isset($_GET['id'])) {
-  $id = $_GET['id'];
-  $sql = "SELECT * FROM tblcourse WHERE id =" . $id;
+if (isset($_GET['course_id'])) {
+  $course_id = $_GET['course_id'];
+  $sql = "SELECT * FROM tblcourse WHERE course_id =" . $course_id;
   $result = mysqli_query($conn, $sql);
   if (mysqli_num_rows($result) > 0) {
     $row = mysqli_fetch_assoc($result);
@@ -21,7 +21,7 @@ if (isset($_POST['Submit'])) {
     $sql = "UPDATE tblcourse
 									SET name = '" . $name . "',
                   duration = '" . $duration . "'
-				WHERE	id=" . $id;
+				WHERE	course_id=" . $course_id;
     $result = mysqli_query($conn, $sql);
     if ($result) {
       $successMsg = 'New record updated successfully';

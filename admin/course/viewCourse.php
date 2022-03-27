@@ -1,10 +1,9 @@
 <?php
 require_once('../config/dbcon.php');
-// $upload_dir = '../uploads/teacher/';
 
 if (isset($_GET['id'])) {
-  $id = $_GET['id'];
-  $sql = "SELECT * FROM tblcourse WHERE id=" . $id;
+  $course_id = $_GET['id'];
+  $sql = "SELECT * FROM tblcourse WHERE course_id=" . $course_id;
   $result = mysqli_query($conn, $sql);
   if (mysqli_num_rows($result) > 0) {
     $row = mysqli_fetch_assoc($result);

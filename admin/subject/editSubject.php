@@ -2,9 +2,9 @@
 require_once('../config/dbcon.php');
 // $upload_dir = '../uploads/teacher/';
 
-if (isset($_GET['id'])) {
-  $id = $_GET['id'];
-  $sql = "SELECT * FROM tblsubject WHERE id =" . $id;
+if (isset($_GET['sub_id'])) {
+  $sub_id = $_GET['sub_id'];
+  $sql = "SELECT * FROM tblsubject WHERE sub_id =" . $sub_id;
   $result = mysqli_query($conn, $sql);
   if (mysqli_num_rows($result) > 0) {
     $row = mysqli_fetch_assoc($result);
@@ -20,7 +20,7 @@ if (isset($_POST['Submit'])) {
     $sql = "UPDATE tblsubject
 									SET name = '" . $name . "',
                   code = '" . $code . "'
-				WHERE	id=" . $id;
+				WHERE	sub_id=" . $sub_id;
     $result = mysqli_query($conn, $sql);
     if ($result) {
       $successMsg = 'New record updated successfully';

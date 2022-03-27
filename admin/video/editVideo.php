@@ -18,7 +18,7 @@ if (isset($_GET['id'])) {
 if (isset($_POST['Submit'])) {
   $title = $_POST['title'];
   $discription = $_POST['discription'];
-  // $thumbnail = $_POST['thumbnail'];
+  $thumbnail = $_POST['thumbnail'];
   $thumbnailName = $_FILES['thumbnail']['name'];
   $thumbnailTmp = $_FILES['thumbnail']['tmp_name'];
   $thumbnailSize = $_FILES['thumbnail']['size'];

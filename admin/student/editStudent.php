@@ -4,9 +4,9 @@ require_once('../config/dbcon.php');
 
 $upload_dir = '../uploads/student/';
 
-if (isset($_GET['id'])) {
-  $id = $_GET['id'];
-  $sql = "SELECT * FROM tblstudent WHERE id =" . $id;
+if (isset($_GET['stu_id'])) {
+  $stu_id = $_GET['stu_id'];
+  $sql = "SELECT * FROM tblstudent WHERE stu_id =" . $stu_id;
   $result = mysqli_query($conn, $sql);
   if (mysqli_num_rows($result) > 0) {
     $row = mysqli_fetch_assoc($result);
@@ -62,7 +62,7 @@ if (isset($_POST['Submit'])) {
                   bg = '" . $bg . "',	
                   dob = '" . $dob . "',	                 
 									image = '" . $userPic . "'
-				WHERE	id=" . $id;
+				WHERE	stu_id=" . $stu_id;
     $result = mysqli_query($conn, $sql);
     if ($result) {
       $successMsg = 'New record updated successfully';

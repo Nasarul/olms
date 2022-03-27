@@ -1,5 +1,6 @@
 <?php
 include('deleteStudent.php');
+// include_once('../includes/sidebar.php')
 include_once('../includes/header.php')
 ?>
 
@@ -50,7 +51,7 @@ include_once('../includes/header.php')
                   while ($row = mysqli_fetch_assoc($result)) {
                 ?>
                     <tr>
-                      <!-- <td><?php echo $row['id'] ?></td> -->                    
+                      <!-- <td><?php echo $row['stu_id'] ?></td> -->                    
                       <!-- <td><?php echo $row['roll'] ?></td> -->
                       <td><img src="<?php echo $upload_dir . $row['image'] ?>" height="40"></td>
                       <td><?php echo $row['name'] ?></td>
@@ -61,9 +62,9 @@ include_once('../includes/header.php')
                       <!-- <td><?php echo $row['dob'] ?></td>
                       <td><?php echo $row['bg'] ?></td> -->
                       <td class="text-center">
-                        <a href="viewStudent.php?id=<?php echo $row['id'] ?>" class="btn btn-success" title="View Profile"><i class="fa fa-eye"></i></a>
-                        <a href="editStudent.php?id=<?php echo $row['id'] ?>" class="btn btn-info" title="Edit Profile"><i class="fa fa-user-edit"></i></a>
-                        <a href="index.php?delete=<?php echo $row['id'] ?>" class="btn btn-danger" title="Delete Profile" onclick="return confirm('Are you sure to delete this record?')"><i class="fa fa-trash-alt"></i></a>
+                        <a href="viewStudent.php?stu_id=<?php echo $row['stu_id'] ?>" class="btn btn-success" title="View Profile"><i class="fa fa-eye"></i></a>
+                        <a href="editStudent.php?stu_id=<?php echo $row['stu_id'] ?>" class="btn btn-info" title="Edit Profile"><i class="fa fa-user-edit"></i></a>
+                        <a href="index.php?delete=<?php echo $row['stu_id'] ?>" class="btn btn-danger" title="Delete Profile" onclick="return confirm('Are you sure to delete this record?')"><i class="fa fa-trash-alt"></i></a>
                       </td>
                     </tr>
                 <?php

@@ -9,8 +9,8 @@
     $msg = "";
 
     if (isset($_GET['verification'])) {
-        if (mysqli_num_rows(mysqli_query($conn, "SELECT * FROM users WHERE code='{$_GET['verification']}'")) > 0) {
-            $query = mysqli_query($conn, "UPDATE users SET code='' WHERE code='{$_GET['verification']}'");
+        if (mysqli_num_rows(mysqli_query($conn, "SELECT * FROM admnusers WHERE code='{$_GET['verification']}'")) > 0) {
+            $query = mysqli_query($conn, "UPDATE admnusers SET code='' WHERE code='{$_GET['verification']}'");
             
             if ($query) {
                 $msg = "<div class='alert alert-success'>Account verification has been successfully completed.</div>";
@@ -24,7 +24,7 @@
         $email = mysqli_real_escape_string($conn, $_POST['email']);
         $password = mysqli_real_escape_string($conn, md5($_POST['password']));
 
-        $sql = "SELECT * FROM users WHERE email='{$email}' AND password='{$password}'";
+        $sql = "SELECT * FROM admnusers WHERE email='{$email}' AND password='{$password}'";
         $result = mysqli_query($conn, $sql);
 
         if (mysqli_num_rows($result) === 1) {
@@ -65,7 +65,6 @@
 </head>
 
 <body>
-
     <!-- form section start -->
     <section class="w3l-mockup-form">
         <div class="container">

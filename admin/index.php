@@ -4,15 +4,8 @@ include('includes/sidebar.php');
 include('includes/topbar.php');
 ?>
 
-
-
-
-
-
-Admin home page
-
-
-
+<div class="content-wrapper">
+</div>
 
 
 <?php

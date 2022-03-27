@@ -15,6 +15,8 @@ include('../includes/header.php')
         <ul class="navbar-nav mr-auto"></ul>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"><a class="btn btn-primary" href="addTeacher.php"><i class="fa fa-user-plus"></i>Add Teacher's Info</a></li>
+          <li></li>
+          <li class="nav-item"><a class="btn btn-primary" href="../index.php"><i class="fa fa-user-plus"></i>Back to Dashboard</a></li>
         </ul>
       </div>
     </div>
@@ -33,8 +35,8 @@ include('../includes/header.php')
                   <th style="text-align:center">Name</th>
                   <th style="text-align:center">Designation</th>
                   <th style="text-align:center">Organization</th>
-                  <th style="text-align:center">E-Mail</th>
-                  <th style="text-align:center">Mobile</th>
+                  <!-- <th style="text-align:center">E-Mail</th>
+                  <th style="text-align:center">Mobile</th> -->
                   <th style="text-align:center">Actions</th>
                 </tr>
               </thead>
@@ -47,17 +49,17 @@ include('../includes/header.php')
                   while ($row = mysqli_fetch_assoc($result)) {
                 ?>
                     <tr>
-                      <td><?php echo $row['id'] ?></td>
+                      <td><?php echo $row['tech_id'] ?></td>
                       <td style="text-align:center"><img src="<?php echo $upload_dir . $row['image']?>" height="80"></td>
                       <td><?php echo $row['name'] ?></td>
                       <td><?php echo $row['designation'] ?></td>
                       <td><?php echo $row['organization'] ?></td>
-                      <td><?php echo $row['email'] ?></td>
-                      <td><?php echo $row['mobile'] ?></td>
+                      <!-- <td><?php echo $row['email'] ?></td>
+                      <td><?php echo $row['mobile'] ?></td> -->
                       <td class="text-center">
-                        <a href="viewTeacher.php?id=<?php echo $row['id'] ?>" class="btn btn-success" title="View Profile"><i class="fa fa-eye"></i></a>
-                        <a href="editTeacher.php?id=<?php echo $row['id'] ?>" class="btn btn-info" title="Edit Profile"><i class="fa fa-user-edit"></i></a>
-                        <a href="index.php?delete=<?php echo $row['id'] ?>" class="btn btn-danger" title="Delete Profile" onclick="return confirm('Are you sure to delete this record?')"><i class="fa fa-trash-alt"></i></a>
+                        <a href="viewTeacher.php?tech_id=<?php echo $row['tech_id'] ?>" class="btn btn-success" title="View Profile"><i class="fa fa-eye"></i></a>
+                        <a href="editTeacher.php?tech_id=<?php echo $row['tech_id'] ?>" class="btn btn-info" title="Edit Profile"><i class="fa fa-user-edit"></i></a>
+                        <a href="index.php?delete=<?php echo $row['tech_id'] ?>" class="btn btn-danger" title="Delete Profile" onclick="return confirm('Are you sure to delete this record?')"><i class="fa fa-trash-alt"></i></a>
                       </td>
                     </tr>
                 <?php

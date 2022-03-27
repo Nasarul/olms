@@ -21,8 +21,8 @@ if (isset($_POST['submit'])) {
     $email = mysqli_real_escape_string($conn, $_POST['email']);
     $code = mysqli_real_escape_string($conn, md5(rand()));
 
-    if (mysqli_num_rows(mysqli_query($conn, "SELECT * FROM users WHERE email='{$email}'")) > 0) {
-        $query = mysqli_query($conn, "UPDATE users SET code='{$code}' WHERE email='{$email}'");
+    if (mysqli_num_rows(mysqli_query($conn, "SELECT * FROM admnusers WHERE email='{$email}'")) > 0) {
+        $query = mysqli_query($conn, "UPDATE admnusers SET code='{$code}' WHERE email='{$email}'");
 
         if ($query) {        
             echo "<div style='display: none;'>";

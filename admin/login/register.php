@@ -24,11 +24,11 @@
         $confirm_password = mysqli_real_escape_string($conn, md5($_POST['confirm-password']));
         $code = mysqli_real_escape_string($conn, md5(rand()));
 
-        if (mysqli_num_rows(mysqli_query($conn, "SELECT * FROM users WHERE email='{$email}'")) > 0) {
+        if (mysqli_num_rows(mysqli_query($conn, "SELECT * FROM admnusers WHERE email='{$email}'")) > 0) {
             $msg = "<div class='alert alert-danger'>{$email} - This email address has been already exists.</div>";
         } else {
             if ($password === $confirm_password) {
-                $sql = "INSERT INTO users (name, email, password, code) VALUES ('{$name}', '{$email}', '{$password}', '{$code}')";
+                $sql = "INSERT INTO admnusers (name, email, password, code) VALUES ('{$name}', '{$email}', '{$password}', '{$code}')";
                 $result = mysqli_query($conn, $sql);
 
                 if ($result) {

@@ -34,8 +34,7 @@ include_once('../includes/header.php')
               <div class="form-group">
                 <label for="name">Course Duration</label>
                 <input type="text" class="form-control" name="duration" placeholder="Enter duration" value="">
-              </div>
-              
+              </div>              
               <div class="form-group">
                 <button type="submit" name="Submit" class="btn btn-primary waves">Submit</button>
               </div>

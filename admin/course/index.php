@@ -1,6 +1,7 @@
 <?php
 include('deleteCourse.php');
 include_once('../includes/header.php')
+// include('../includes/sidebar.php')
 ?>
 
 <body>
@@ -43,14 +44,14 @@ include_once('../includes/header.php')
                   while ($row = mysqli_fetch_assoc($result)) {
                 ?>
                     <tr>
-                      <td><?php echo $row['id'] ?></td>
+                      <td><?php echo $row['course_id'] ?></td>
                       <td><?php echo $row['name'] ?></td>
                       <td><?php echo $row['duration'] ?></td>
                     
                       <td class="text-center">
-                        <a href="viewCourse.php?id=<?php echo $row['id'] ?>" class="btn btn-success" title="View Course"><i class="fa fa-eye"></i></a>
-                        <a href="editCourse.php?id=<?php echo $row['id'] ?>" class="btn btn-info" title="Edit Course"><i class="fa fa-user-edit"></i></a>
-                        <a href="index.php?delete=<?php echo $row['id'] ?>" class="btn btn-danger" title="Delete Course" onclick="return confirm('Are you sure to delete this record?')"><i class="fa fa-trash-alt"></i></a>
+                        <a href="viewCourse.php?id=<?php echo $row['course_id'] ?>" class="btn btn-success" title="View Course"><i class="fa fa-eye"></i></a>
+                        <a href="editCourse.php?course_id=<?php echo $row['course_id'] ?>" class="btn btn-info" title="Edit Course"><i class="fa fa-user-edit"></i></a>
+                        <a href="index.php?delete=<?php echo $row['course_id'] ?>" class="btn btn-danger" title="Delete Course" onclick="return confirm('Are you sure to delete this record?')"><i class="fa fa-trash-alt"></i></a>
                       </td>
                     </tr>
                 <?php
