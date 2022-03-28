@@ -16,6 +16,7 @@ include_once('../includes/header.php')
         <ul class="navbar-nav mr-auto"></ul>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"><a class="btn btn-primary" href="addCourse.php"><i class="fa fa-user-plus"></i>Add Course Info</a></li>
+          <li class="nav-item"><a class="btn btn-outline-danger" href="../index.php"><i class="fa fa-sign-out-alt"></i>Back to Dashboard</a></li>
         </ul>
       </div>
     </div>

@@ -4,7 +4,6 @@ include('../includes/header.php')
 ?>
 
 <body>
-
   <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
     <div class="container">
       <a class="navbar-brand">TEACHER'S INFORMATION</a>
@@ -14,8 +13,7 @@ include('../includes/header.php')
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto"></ul>
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="btn btn-primary" href="addTeacher.php"><i class="fa fa-user-plus"></i>Add Teacher's Info</a></li><br>
-
+          <li class="nav-item"><a class="btn btn-primary" href="addTeacher.php"><i class="fa fa-user-plus"></i>Add Teacher's Info</a></li><br></br>
           <li class="nav-item"><a class="btn btn-outline-danger" href="../index.php"><i class="fa fa-sign-out-alt"></i>Back to Dashboard</a></li>
         </ul>
       </div>

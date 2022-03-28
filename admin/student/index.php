@@ -1,6 +1,5 @@
 <?php
 include('deleteStudent.php');
-// include_once('../includes/sidebar.php')
 include_once('../includes/header.php')
 ?>
 
@@ -16,6 +15,7 @@ include_once('../includes/header.php')
         <ul class="navbar-nav mr-auto"></ul>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"><a class="btn btn-primary" href="addStudent.php"><i class="fa fa-user-plus"></i>Add Student's Info</a></li>
+          <li class="nav-item"><a class="btn btn-outline-danger" href="../index.php"><i class="fa fa-sign-out-alt"></i>Back to Dashboard</a></li>
         </ul>
       </div>
     </div>
@@ -61,6 +61,7 @@ include_once('../includes/header.php')
                       <td><?php echo $row['mobile'] ?></td>
                       <!-- <td><?php echo $row['dob'] ?></td>
                       <td><?php echo $row['bg'] ?></td> -->
+
                       <td class="text-center">
                         <a href="viewStudent.php?stu_id=<?php echo $row['stu_id'] ?>" class="btn btn-success" title="View Profile"><i class="fa fa-eye"></i></a>
                         <a href="editStudent.php?stu_id=<?php echo $row['stu_id'] ?>" class="btn btn-info" title="Edit Profile"><i class="fa fa-user-edit"></i></a>
