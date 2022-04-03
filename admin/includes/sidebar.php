@@ -69,15 +69,47 @@
           </a>
         </li>
         <li class="nav-header">Maintenance</li>
+        
         <li class="nav-item dropdown">
           <a href="course/index.php" class="nav-link nav-course">
-            <i class="fa-solid fa-user-plus"></i>
+          <i class="fa-solid fa-file-circle-plus"></i>
+            <p>
+              Upload lectur file
+            </p>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="video/video_insert.php" class="nav-link nav-course">
+          <i class="fa-solid fa-file-video"></i>
+            <p>
+              Upload class vedio
+            </p>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="adminUsers.php" class="nav-link nav-course">
+          <i class="fa-solid fa-user-shield"></i>
             <p>
               Add admin user
             </p>
           </a>
         </li>
-
+        <li class="nav-item dropdown">
+          <a href="adminUsers.php" class="nav-link nav-course">
+          <i class="fa-solid fa-user-tie"></i>
+            <p>
+              Add Teacher user
+            </p>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="adminUsers.php" class="nav-link nav-course">
+            <i class="fa-solid fa-user-plus"></i>
+            <p>
+              Add Student user
+            </p>
+          </a>
+        </li>
       </ul>
       <!-- <ul class="nav nav-treeview">
                 <li class="nav-item">
