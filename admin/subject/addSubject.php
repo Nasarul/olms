@@ -14,7 +14,7 @@ include_once('../includes/header.php')
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto"></ul>
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="btn btn-outline-danger" href="index.php"><i class="fa fa-sign-out-alt"></i></a></li>
+          <li class="nav-item"><a class="btn btn-outline-danger" href="index.php"><i class="fa fa-sign-out-alt"></i>Back</a></li>
         </ul>
       </div>
     </div>
@@ -28,7 +28,10 @@ include_once('../includes/header.php')
           <div class="card-body">
             <form class="" action="saveSubject.php" method="post" enctype="multipart/form-data">
               <div class="form-group">
-               
+              <div class="form-group">
+                <label for="name">Course ID</label>
+                <input type="text" class="form-control" name="course_id" placeholder="Enter Subjects code" value="">
+              </div>
               <div class="form-group">
                 <label for="name">Subject Code</label>
                 <input type="text" class="form-control" name="code" placeholder="Enter Subjects code" value="">

@@ -32,6 +32,11 @@ include('../includes/header.php')
         <div class="card-body">
           <div class="row">
             <div class="col-md">
+
+            <h5 class="form-control"><i class="fa-solid fa-book"></i>
+                <span><?php echo $row['course_id'] ?></span>
+                </i>
+              </h5>
               <h5 class="form-control"><i class="fa-solid fa-book"></i>
                 <span><?php echo $row['name'] ?></span>
                 </i>

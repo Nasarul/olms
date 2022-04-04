@@ -54,6 +54,13 @@ include_once('../includes/header.php')
         </div>
         <div class="card-body">
           <form class="" action="" method="post" enctype="multipart/form-data">
+
+
+            <div class="form-group">
+              <label for="name">Course ID</label>
+              <input type="text" class="form-control" name="course_id" placeholder="Enter Subjects Name..." value="<?php echo $row['course_id']; ?>">
+            </div>
+
             <div class="form-group">
               <label for="name">Subject Name</label>
               <input type="text" class="form-control" name="name" placeholder="Enter Subjects Name..." value="<?php echo $row['name']; ?>">

@@ -29,9 +29,10 @@ include_once('../includes/header.php')
             <table id="example" class="table table-striped table-bordered" style="width:100%">
               <thead>
                 <tr>
-                  <th style="text-align:center">SL.</th>
+                  <!-- <th style="text-align:center">SL.</th> -->
+                  <th style="text-align:center">Course ID</th>  
                   <th style="text-align:center">Subjects Code</th>
-                  <th style="text-align:center">Subject Name</th>                  
+                  <th style="text-align:center">Subject Name</th>         
                   <th style="text-align:center">Actions</th>
                 </tr>
               </thead>
@@ -44,7 +45,8 @@ include_once('../includes/header.php')
                   while ($row = mysqli_fetch_assoc($result)) {
                 ?>
                     <tr>
-                      <td><?php echo $row['sub_id'] ?></td>
+                      <td><?php echo $row['course_id'] ?></td>
+                      <!-- <td><?php echo $row['sub_id'] ?></td> -->
                       <td><?php echo $row['code'] ?></td>
                       <td><?php echo $row['name'] ?></td>
 
